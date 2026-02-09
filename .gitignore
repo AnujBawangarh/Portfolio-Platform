@@ -21,3 +21,6 @@ __pycache__/
 
 # --- Backend (Node/Express - if applicable) ---
 /server/node_modules
+
+# --- environment variables ---
+.env
