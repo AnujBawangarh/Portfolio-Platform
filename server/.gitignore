@@ -1,0 +1,23 @@
+# --- General ---
+.DS_Store
+Thumbs.db
+
+# --- Frontend (Node/React) ---
+node_modules/
+/client/node_modules
+/client/build
+/client/dist
+/client/.env
+/client/.env.local
+
+# --- Backend (Python/Django/Flask) ---
+__pycache__/
+*.py[cod]
+/server/venv
+/server/.venv
+/server/env
+/server/db.sqlite3
+/server/.env
+
+# --- Backend (Node/Express - if applicable) ---
+/server/node_modules
