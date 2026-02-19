@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 class ApiError extends Error {
+=======
+class ApiError extends error {
+>>>>>>> 41e81f22d789755813b2420b22fa7d77bbecd018
     constructor(
         statuscode,
         message = "Something went wrong",
@@ -20,4 +24,8 @@ class ApiError extends Error {
     }
 }
 
+<<<<<<< HEAD
 export {ApiError};
+=======
+export default ApiError;
+>>>>>>> 41e81f22d789755813b2420b22fa7d77bbecd018
