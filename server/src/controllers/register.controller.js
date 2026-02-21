@@ -1,17 +1,15 @@
-import { asyncHandler } from "../utils/asyncHandler.utils.js";
-import { User } from "../models/user.model.js"
-import { ApiError } from "../utils/apiError.utils.js";
-import { ApiResponse } from "../utils/apiResponse.utils.js";
+import  asyncHandler  from "../utils/asyncHandler.utils.js";
+import User  from "../models/user.model.js"
+import ApiError  from "../utils/apiError.utils.js";
+import ApiResponse  from "../utils/apiResponse.utils.js";
 import bcrypt from "bcrypt";
 
 const registerUser = asyncHandler(async(req,res)=>{
     const {name,email,password} = req.body;
 
-    if(name || email || password){
+    if(!name){
         throw new ApiError(400,"Enter all fields");
     }
-
-    console.log(name,email,password);
     
 
     const userExist = await User.findOne({
@@ -23,12 +21,8 @@ const registerUser = asyncHandler(async(req,res)=>{
     }
 
     const saltRounds = 10;
-    const salt = await bcrypt.genSalt(saltRounds,(err,salt)=>{
-        if(err){
-            return err;
-        }
-    }) 
-
+    const salt = await bcrypt.genSalt(saltRounds); 
+    console.log(salt);
     const hashedPassword = await bcrypt.hash(password,salt);
     console.log(hashedPassword)
 
@@ -51,4 +45,4 @@ const registerUser = asyncHandler(async(req,res)=>{
     )
 })
 
-export {registerUser}
+export default registerUser;
