@@ -7,7 +7,7 @@ import bcrypt from "bcrypt";
 const registerUser = asyncHandler(async(req,res)=>{
     const {name,email,password} = req.body;
 
-    if(!name){
+    if(!name || !email || !password){
         throw new ApiError(400,"Enter all fields");
     }
     
@@ -22,9 +22,7 @@ const registerUser = asyncHandler(async(req,res)=>{
 
     const saltRounds = 10;
     const salt = await bcrypt.genSalt(saltRounds); 
-    console.log(salt);
     const hashedPassword = await bcrypt.hash(password,salt);
-    console.log(hashedPassword)
 
     const regUser = await User.create({
         name : name.toLowerCase(),
