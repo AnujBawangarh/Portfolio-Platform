@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+.rest-of-page{
+    padding-top: 100px;
+}
+
 .logo-container{
     display: flex;
     align-items: center;
@@ -16,13 +20,248 @@
     margin-right: 30px;
 }
 
-.profile-pic{
+.logo-email{
     display: flex;
-    justify-content: right;
+    align-items: center;
+    padding: 20px;
 }
 
-.profile-pic img{
-    width: 600px;
-    height: auto;
-    margin-top: 0%;
+.logo-email img{
+    width: 60px;
+    height: 60px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+
+.logo-email a{
+    text-decoration: none;
+    color: rgb(106, 255, 0);
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background: linear-gradient(to right, #123c01, #237403); 
+    width: 100%; 
+    z-index: 1000;
+    padding: 2px;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding-right: 150px;
+}
+
+.navbar ul{
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li{
+    margin-left: 80px;
+}
+
+.navbar ul li a{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.navbar ul li a:hover{
+    color: #00ff00;
+    transform: scale(1.2);
+    transition: transform 0.4s ease;
+}
+
+.heading{
+    padding: 0px 50px 0px 50px;
+    margin: 10px;
+    text-align: left;
+    width: 50%;
+}
+
+.heading #name{
+    font-size: 48px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 30px;
+}
+
+.heading #domain{
+    font-size: 32px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 30px;
+}
+
+.heading h2{
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 30px;
+}
+
+.resume-and-social-media{
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+}
+
+.resume-and-social-media button{
+    background: linear-gradient(to right, #123c01, #237403);
+    border-radius: 20px;
+    border: none;
+    padding: 10px 20px;
+    margin: 30px;
+    font-size: 18px;
+}
+
+.resume-and-social-media button a{
+    text-decoration: none;
+    color: wheat;
+    font-size: 18px;
+}
+
+.profile-pic{
+    height: 500px;
+    width: 500px;
+    padding: 100px;
+    margin: 20px 100px 20px 20px;
+    background-image: url();
+    background-size: cover;
+    border-radius: 30px;
+    border: black solid 2px;
+}
+
+.overall-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.my-experience{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 10px 70px 10px;
+}
+
+.my-experience .number{
+    font-size: 52px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 20px;
+}
+
+.my-experience .written{
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 20px;
+}
+
+.my-experience .spans{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.education-and-experience{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 10px 70px 10px;
+}
+
+.education-and-experience .education{
+    text-align: center;
+    width: 45%;
+    padding: 20px;
+}
+
+.education-and-experience .experience{
+    text-align: center;
+    width: 45%;
+    padding: 20px;
+}
+
+.skills{
+    text-align: center;
+}
+
+.skills .skills-heading{
+    padding: 20px;
+}
+
+.skills .skills-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.skills .skills-container div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills .skills-container div img{
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.contact{
+    text-align: center;
+    padding: 70px 10px 70px 10px;
+}
+
+.phone-no{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact .email{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.connect-with-me{
+    text-align: center;
+    padding: 40px 10px 70px 10px;
+}
+
+.connect-with-me #lets-connect{
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+}
+
+.footer{
+    background-color: darkolivegreen;
+    color: wheat;
+    text-align: center;
+    padding: 50px 20px 50px 20px;
+}
+
+.footer .footer-note img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
 }

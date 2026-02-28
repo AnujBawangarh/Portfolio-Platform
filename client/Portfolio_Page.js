@@ -15,9 +15,3 @@ const instagram = document.getElementById('instagram');
 instagram.addEventListener('click', () => {
     window.open('https://www.instagram.com/anujbawangarh/', "_blank");
 });
-
-const resumebtn = document.getElementById('resumebtn');
-
-resumebtn.addEventListener('click', () => {
-    window.open('https://drive.google.com/file/d/1n9l8sXo2mLh7a3e5j6k8l9m0n1o2p3q/view?usp=sharing', "_blank"); 
-});
