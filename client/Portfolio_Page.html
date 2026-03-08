@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="Portfolio_Page.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -17,8 +25,8 @@
             </div>
             <nav class="navbar">
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -26,11 +34,11 @@
         </header>
     </div>
 
-    <div class="rest-of-page">
+    <div class="rest-of-page" id="home">
         <div class="overall-container">
-            <div class="text container">
+            <div class="text-container">
                 <div class="heading">
-                    <h1 id="name">I AM ANUJ</h1>
+                    <h1 id="name">I am Anuj</h1>
                     <h1 id="domain">FRONTEND DEVELOPER + UI/UX DESIGNER</h1>
                     <h2>Aspiring engineer passionate about building functional, accessible, and beautiful web
                         applications
@@ -51,7 +59,7 @@
             </div>
 
             <div class="profile-pic">
-
+                <img src="images/anuj.jpg" alt="">
             </div>
         </div>
 
@@ -77,7 +85,7 @@
             </span>
         </div>
 
-        <div class="my-projects">
+        <div class="my-projects" id="projects">
 
             <div class="project-heading">
                 <p>My Projects</p>
@@ -85,21 +93,25 @@
             </div>
 
             <div id="projects" class="projects-container">
-                <div>
+                <div class="project-card">
                     <img src="images/project1.png" alt="">
                     <p>Project 1</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat doloribus hic deserunt error, alias impedit sed dolorum ducimus vitae non at debitis facilis molestiae distinctio quod iste odio! Dolor, provident!</p>
                 </div>
-                <div>
+                <div class="project-card">
                     <img src="images/project2.png" alt="">
                     <p>Project 2</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat doloribus hic deserunt error, alias impedit sed dolorum ducimus vitae non at debitis facilis molestiae distinctio quod iste odio! Dolor, provident!</p>
                 </div>
-                <div>
+                <div class="project-card">
                     <img src="images/project3.png" alt="">
                     <p>Project 3</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat doloribus hic deserunt error, alias impedit sed dolorum ducimus vitae non at debitis facilis molestiae distinctio quod iste odio! Dolor, provident!</p>
                 </div>
-                <div>
+                <div class="project-card">
                     <img src="images/project4.png" alt="">
                     <p>Project 4</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat doloribus hic deserunt error, alias impedit sed dolorum ducimus vitae non at debitis facilis molestiae distinctio quod iste odio! Dolor, provident!</p>
                 </div>
 
             </div>
@@ -107,25 +119,25 @@
             <div class="education-and-experience">
                 <div class="education">
 
-                    <span>
+                    <span class="education-heading">
                         My Education
                     </span>
 
-                    <div>
+                    <div class="education-card">
                         <p>2022 - Present</p>
                         <p>B.Tech in Computer Science</p>
                         <p>GH Raisoni College of Engineering and Management, Nagpur</p>
                         <p>India</p>
                     </div>
 
-                    <div>
+                    <div class="education-card">
                         <p>2020 - 2022</p>
                         <p>Higher Secondary Education (HSC)</p>
                         <p>Kamla Nehru Mahavidyalaya, Nagpur</p>
                         <p>India</p>
                     </div>
 
-                    <div>
+                    <div class="education-card">
                         <p>2019 - 2020</p>
                         <p>Secondary Education (SSC)</p>
                         <p>Shahus Garden High School & Jr College, Nagpur</p>
@@ -135,18 +147,18 @@
                 </div>
 
                 <div class="experience">
-                    <span>
+                    <span class="experience-heading">
                         My Experience
                     </span>
 
-                    <div>
+                    <div class="experience-card">
                         <p>2023 - Present</p>
                         <p>Frontend Developer Intern</p>
                         <p>Tech Solutions Inc.</p>
                         <p>Remote</p>
                     </div>
 
-                    <div>
+                    <div class="experience-card">
                         <p>2022 - 2023</p>
                         <p>UI/UX Design Intern</p>
                         <p>Creative Minds Studio</p>
@@ -155,39 +167,39 @@
                 </div>
             </div>
 
-            <div class="skills">
+            <div class="skills" id="skills">
                 <div class="skills-heading">
                     <span>My Skills</span>
                     <p>Explore the wide range of skills I brings as a UI/UX designer and web developer.</p>
                 </div>
 
                 <div class="skills-container">
-                    <div>
+                    <div class="skill-card">
                         <img src="images/figma.png" alt="">
                         <p>Figma</p>
                     </div>
 
-                    <div>
+                    <div class="skill-card">
                         <img src="images/html.png" alt="">
                         <p>HTML</p>
                     </div>
 
-                    <div>
+                    <div class="skill-card">
                         <img src="images/css.png" alt="">
                         <p>CSS</p>
                     </div>
 
-                    <div>
+                    <div class="skill-card">
                         <img src="images/js.png" alt="">
                         <p>JavaScript</p>
                     </div>
 
-                    <div>
+                    <div class="skill-card">
                         <img src="images/react.png" alt="">
                         <p>ReactJS</p>
                     </div>
 
-                    <div>
+                    <div class="skill-card">
                         <img src="images/tailwind.png" alt="">
                         <p>Tailwind CSS</p>
                     </div>
@@ -202,7 +214,7 @@
                         <span><img src="" alt=""></span>
                     </div>
 
-                    <div>
+                    <div class="details">
                         <p>Phone</p>
                         <p>+91 8975189141</p>
                     </div>
@@ -215,7 +227,7 @@
                         <span><img src="" alt=""></span>
                     </div>
 
-                    <div>
+                    <div class="details">
                         <p>Email</p>
                         <p>anujbawangarh09@gmail.com</p>
                     </div>
